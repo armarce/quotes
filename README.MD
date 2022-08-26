@@ -1,0 +1,1 @@
+https://app-quotes.netlify.app/
