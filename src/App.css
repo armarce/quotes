@@ -11,29 +11,26 @@ body{
 }
 #root{
   width: 100%;
+  padding: 20px;
   height: 98vh;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: minmax(300px, 640px);
+  align-items: center;
   justify-content: center;
 }
-.App{
-  padding: 20px;
-}
 #card{
+  position: relative;
   padding: 20px 20px 80px 20px;
   font-size: 18px;
   line-height: 26px;
-  background-repeat: no-repeat;
-  margin: 0 auto;
   max-width: 640px;
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 0.4px 0.4px 10px #888;
-  position: relative;
   border-radius: 10px;
 }
 #card #quote{
-  display: flex;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: 70px 1fr;
 }
 #card #quote i{
   font-size: 60px;
@@ -53,16 +50,15 @@ body{
   font-size: 16px;
 }
 #card button{
-  height: 40px;
-  width: 40px;
+  position: absolute;
+  height: 44px;
+  width: 44px;
   border: none;
   margin-top: 20px;
-  position: absolute;
   bottom: 20px;
   right: 20px;
-  line-height: 40px;
-  font-size: 20px;
-  padding-bottom: 40px;
+  line-height: 44px;
+  font-size: 22px;
   border-radius: 50%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   cursor: pointer;

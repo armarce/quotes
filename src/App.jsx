@@ -26,15 +26,11 @@ function App() {
   document.body.style['background-color'] = color;
 
   return (
-
-    <div className="App">
-      <div id="card">
-        <QuoteBox color={color} quote={quotes[indexQuote].quote}/>
-        <span id="author" style={{color: color}}>{quotes[indexQuote].author}</span>
-        <Button randomQuote={randomQuote} color={color}/>
-      </div>
+    <div id="card">
+      <QuoteBox color={color} quote={quotes[indexQuote].quote}/>
+      <span id="author" style={{color: color}}>{quotes[indexQuote].author}</span>
+      <Button randomQuote={randomQuote} color={color}/>
     </div>
-
   )
 }
 
