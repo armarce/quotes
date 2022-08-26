@@ -15,23 +15,13 @@ function App() {
 
   const [indexQuote, setIndexQuote] = useState(randomIndex(quotes));
 
-  const [indexColor, setIndexColor] = useState(randomIndex(colors));
-
-  const randomColor = () => {
-
-    setIndexColor(randomIndex(colors));
-
-  }
-
   const randomQuote = () => {
-
-    randomColor();
 
     setIndexQuote(randomIndex(quotes));
 
   }
 
-  const color = `#${colors[indexColor].color}`;
+  const color = `#${colors[randomIndex(colors)].color}`;
 
   document.body.style['background-color'] = color;
 
