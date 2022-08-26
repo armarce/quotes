@@ -1,4 +1,4 @@
-export const ShowQuote = ({quote, color}) =>{
+export const QuoteBox = ({quote, color}) =>{
 
     return(
         <div id="quote">
